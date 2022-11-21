@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo2.png" type="image/x-icon">
+    <title>Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/scroll.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend:{
+                    fontFamily:{
+                        bai:['Bai Jamjuree']
+                    },
+                    color:{
+                        'baseColor': '#5FCC9C',
+                    },
+                    gridTemplateColumns:{
+                        'main-grid': '1fr 2fr'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+       /* Syntax CSS Here */
+       .main-lg{
+        grid-template-columns: 0.5fr 2fr;
+       }
+    </style>
+</head>
+<body class="font-bai bg-slate-200">
+
+    <!-- Super Container -->
+    <div class=" mx-auto">
+        <!-- Navbar -->
+        <div class="lg:hidden bg-black flex items-center justify-between py-2">
+            <!-- Logo -->
+            <a href="#" class="ml-3"><img src="assets/img/logo2.png" width="50px" alt="logo"></a>
+
+            <!-- Nav Menu -->
+            <div class="bg-white w-10 h-10 mr-3 lg:hidden"></div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Main-Lg -->
+        <div class="main-lg hidden lg:grid h-full">
+            <!-- [Left Side] -->
+            <div class=""></div>
+            <div class="fixed flex flex-col w-[20%] h-[100vh] px-5 bg-slate-200">    
+                <!-- Logo -->
+                <div class="flex flex-row items-center mt-5 mb-14">
+                    <img src="assets/img/logo.png" alt="logo" width="50px" class=" ">
+                    <h1 class="text-xl font-bold ml-1">DINACOM</h1>
+                </div>
+                <!-- Logo End -->
+
+                <!-- Beranda -->
+                <div class="mb-7">
+                    <h1 class="mb-2 text-green-500 font-semibold">Beranda</h1>
+                    <a href="#" class="animate__animated  flex items-center w-full px-3 py-2 transition-all duration-300 group hover:bg-green-500 hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                        <img src="assets/logo/home.svg" alt="home" width="25px" class="mr-4 transition-all duration-300 group-hover:invert">
+                        <h2 class="font-semibold">Beranda</h2>
+                    </a>
+                </div>
+                <!-- Beranda End -->
+
+                <div class="w-[93%] mx-auto border border-slate-400"></div>
+
+                <!-- Lomba -->
+                <div class="mt-7 h-full">
+                    <h1 class="mb-2 font-semibold text-green-500">Lomba</h1>
+
+                    <!-- Peserta -->
+                    <a href="#" class="animate__animated  flex items-center px-3 py-2 transition-all duration-300 group hover:bg-green-500 hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                        <img src="assets/logo/peserta.svg" alt="peserta" width="25px" class="mr-4 transition-all duration-300 group-hover:invert">
+                        <h2 class="font-semibold">Peserta</h2>
+                    </a>
+
+                    <!-- Unggah -->
+                    <a href="#" class="animate__animated  flex items-center px-3 py-2 mt-2 transition-all duration-300 group hover:bg-green-500 hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                        <img src="assets/logo/upload.svg" alt="upload" width="25px" class="mr-4 transition-all duration-300 group-hover:invert">
+                        <h2 class="font-semibold">Unggah</h2>
+                    </a>
+                </div>
+                <!-- Lomba End -->
+
+                <!-- Logout -->
+                <a href="#" class="flex justify-self-end mb-5 px-3 py-2 transition-all duration-300 group hover:bg-green-500 hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                    <img src="assets/logo/logout.svg" width="25px" alt="logout" class="mr-4 transition-all duration-300 group-hover:invert">
+                    <h1 class="font-semibold inline-block">Log Out</h1>
+                </a>
+
+            </div>
+            <!-- [Left Side] End -->
+
+            <!-- [Right Side] -->
+            <div class="flex flex-col mx-3 my-3 rounded-xl bg-[#005857]">
+                <!-- Profile -->
+                <div class="flex items-center justify-end mt-4 mr-9">
+                    <h1 class="mr-4 font-semibold text-white">Welcome, Pou One!</h1>
+                    <img src="assets/img/profile.png" alt="profile" width="50px">
+                </div>
+                <!-- Profile End -->
+
+                <!-- Greeting -->
+                <div class="text-5xl mt-3 ml-8 font-bold leading-[3.6rem]">
+                    <h1 class="text-white animate__animated animate__backInRight"><span class="text-[#5FCC9C]">DASH</span>BOARD | DINACOM 2023</h1>
+                </div>
+
+                <!-- Border Line -->
+                <div class="w-[93%] mx-auto my-9 border border-slate-400"></div>
+
+                <!-- Content -->
+                <div class="animate__animated animate__zoomIn mx-8 mb-5 h-full rounded-xl border border-cyan-400">
+                    <h1>INSERT YOUR CONTENT HERE!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sapiente unde amet ex eius distinctio, repudiandae odit omnis cum, laudantium perspiciatis pariatur magnam harum voluptatibus veritatis repellat incidunt maxime! Eos nobis, ratione debitis illum atque sunt, expedita molestiae eius repellat iste non officiis laboriosam consequatur eveniet optio dicta velit nulla placeat pariatur sequi unde quod animi aperiam autem? Voluptatem, minima iure itaque adipisci recusandae, minus illum quisquam harum eligendi tempora et unde at explicabo? Nostrum explicabo, ipsum ex libero, architecto numquam veniam nihil suscipit nisi cum sit dolor maiores. Blanditiis dolor quo dolorum labore eum est, exercitationem a aperiam consequatur, iure, facilis beatae adipisci. Eligendi architecto nesciunt magni maxime ad ducimus earum quod quidem esse quis a corporis repellendus facere officiis ab, rem quo suscipit mollitia harum accusamus iste perspiciatis consequuntur voluptatem neque. Neque vel nulla earum hic sapiente possimus itaque? Veritatis dolor fuga repellat animi? Natus, commodi rem numquam labore consequuntur iusto facere iure aspernatur nesciunt asperiores delectus maiores doloremque doloribus ullam ipsa ducimus cumque aliquid quia! Sapiente ratione possimus at repellendus excepturi tenetur iure! Voluptate ut ex veniam consequuntur est optio, necessitatibus dolore adipisci, non nisi quibusdam! Dolorem, illum at. Molestiae consectetur fugiat necessitatibus quibusdam reprehenderit sequi odio nam, ducimus minima magni. Perferendis perspiciatis exercitationem aperiam minima nesciunt eveniet, temporibus adipisci placeat, reiciendis voluptatum commodi cupiditate autem quae, iusto blanditiis facere voluptatibus qui. Ipsa reiciendis dolores repellat dolorem aliquid nam, et beatae, maiores cupiditate quis rem iste voluptatum omnis voluptas, eveniet doloremque at numquam. Animi quisquam eaque minus. Magni nemo accusamus eos numquam placeat! Perferendis eum numquam illo tenetur natus amet eaque aut architecto veritatis assumenda rem, corporis, qui aliquid? Eaque vero iusto veritatis distinctio quasi ipsa nulla quibusdam dignissimos, cum quod ullam velit explicabo architecto incidunt inventore accusamus ipsam provident at asperiores nisi, optio officiis mollitia, suscipit cupiditate. Minima blanditiis doloribus veritatis tenetur sunt eveniet possimus laborum, nesciunt commodi quam in! Inventore odio dolore excepturi esse dignissimos expedita optio, consectetur, veritatis dolor id provident delectus officia perspiciatis. Veritatis quisquam, nemo fugit mollitia amet nulla distinctio eaque minus quae itaque rerum quidem magnam cupiditate iusto dolorem dolore, harum at et. Itaque dolorum reprehenderit totam eius atque, doloremque aspernatur incidunt exercitationem, quas temporibus ut harum maiores porro vel adipisci ratione esse veritatis voluptatibus expedita mollitia corrupti? Quasi, iure qui? Assumenda ut dolorem quas, at omnis eveniet labore voluptatem esse, excepturi, ducimus animi hic neque quidem nostrum ratione qui atque ipsam eos ipsum! Numquam vero dolorem distinctio doloremque, et adipisci sunt eaque consequatur laboriosam quos. Corrupti quo quas quasi eveniet illo necessitatibus, ut, tempora delectus eos esse quod in molestias quibusdam voluptates hic voluptas aut illum harum sapiente nihil deserunt. Accusantium nisi iste optio reiciendis. Repudiandae ut sequi excepturi odio porro alias, quidem, quibusdam neque tempora quos natus officiis incidunt expedita numquam dolores eum animi obcaecati dolorem tempore quia accusamus. Quis nostrum, voluptates facilis officiis cumque tempora quae repellendus, exercitationem culpa ipsum eveniet architecto placeat nulla eos magnam obcaecati sed quas sit dolorem quia eaque repudiandae atque? Ab, voluptas et.</p>
+                    
+                </div>
+                <!-- Content End-->
+            </div>
+            <!-- [Right Side] End -->
+        </div>
+        <!-- Main-Lg End -->
+
+        <!-- Main-Sm-Md -->
+        <!-- Hero -->
+        <div class="lg:hidden text-[2.5rem] md:text-5xl mt-12 font-bold leading-[3.3rem] md:leading-[3.6rem] text-center">
+            <h1><span class="text-green-500">DASH</span>BOARD</h1>
+        </div>
+        <!-- Hero End -->
+
+        <!-- Border Line -->
+        <div class="lg:hidden w-[93%] mx-auto my-9 border border-slate-400"></div>
+
+        <!-- Content -->
+        <div class="lg:hidden border border-cyan-400 w-[90%] px-4 mx-auto rounded-xl">
+            <h1>INSERT YOUR CONTENT HERE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatibus dicta illo quidem non corrupti harum nobis accusamus modi, enim id numquam veritatis quo expedita tenetur dignissimos saepe suscipit eos cum aperiam recusandae, nam, quis consectetur adipisci. Odit, laboriosam suscipit.</p>
+        </div>
+        <!-- Content End -->
+    </div>
+    <!-- Super Container End -->
+</body>
+</html>
