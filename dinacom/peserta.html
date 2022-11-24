@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo2.png" type="image/x-icon">
+    <title>Peserta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/scroll.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        bai: ['Bai Jamjuree']
+                    },
+                    color: {
+                        'baseColor': '#5FCC9C',
+                    },
+                    gridTemplateColumns: {
+                        'main-grid': '1fr 2fr'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        /* Syntax CSS Here */
+       .main-lg{
+        grid-template-columns: 0.5fr 2fr;
+       }
+
+       .form-grid{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1.5fr;
+       }
+    </style>
+</head>
+
+<body class="font-bai bg-slate-200">
+
+    <!-- Super Container -->
+    <div class=" mx-auto">
+        <!-- Navbar -->
+        <div class="lg:hidden bg-black flex items-center justify-between py-4 px-4">
+            <!-- Logo -->
+            <div class="flex flex-row items-center">
+                <a href="#" class="ml-3"><img src="assets/img/logo2.png" width="50px" alt="logo"></a>
+                <h1 class="text-white text-xl font-bold ml-2">DINACOM</h1>
+            </div>
+
+            <!-- Nav Menu -->
+            <div class="bg-white w-13 h-13 mr-3 rounded-lg overflow-hidden lg:hidden">
+                <button id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="bg-slate-200 w-full h-full text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">
+                    <img src="../../assets/logo/humberger.svg" width="" alt="">
+                </button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownDivider"
+                    class="hidden z-10 w-44 bg-slate-200 rounded divide-y divide-gray-400 shadow dark:bg-gray-700 dark:divide-gray-600">
+                    <div class="py-1">
+                        <a href="beranda.html"
+                            class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Beranda</a>
+                    </div>
+                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
+                        <li>
+                            <a href="peserta.html"
+                                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Peserta</a>
+                        </li>
+                        <li>
+                            <a href="unggah.html"
+                                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Unggah</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Dropdown Menu End -->
+            </div>
+            <!-- Nav Menu End -->
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Main-Lg -->
+        <div class="main-lg hidden lg:grid h-full">
+            <!-- [Left Side] -->
+            <div class=""></div>
+            <div class="animate__animated animate__slideInLeft fixed flex flex-col w-[20%] h-[100vh] px-5 bg-slate-200">
+                <!-- Logo -->
+                <div class="flex flex-row items-center mt-5 mb-14">
+                    <img src="assets/img/logo.png" alt="logo" width="50px" class=" ">
+                    <h1 class="text-xl font-bold ml-1">DINACOM</h1>
+                </div>
+                <!-- Logo End -->
+
+                <!-- Beranda -->
+                <div class="mb-7">
+                    <h1 class="mb-2 text-[#005857] font-semibold">Beranda</h1>
+                    <a href="beranda.html"
+                        class="animate__animated  flex items-center w-full px-3 py-2 transition-all duration-300 group hover:bg-[#005857] hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                        <img src="../assets/logo/home.svg" alt="home" width="25px"
+                            class="mr-4 transition-all duration-300 group-hover:invert">
+                        <h2 class="font-semibold">Beranda</h2>
+                    </a>
+                </div>
+                <!-- Beranda End -->
+
+                <div class="w-[93%] mx-auto border border-slate-400"></div>
+
+                <!-- Lomba -->
+                <div class="mt-7 h-full">
+                    <h1 class="mb-2 font-semibold text-[#005857]">Lomba</h1>
+
+                    <!-- Peserta -->
+                    <a href="peserta.html"
+                        class="animate__animated  flex items-center px-3 py-2 transition-all duration-300 border-4 border-l-0 border-y-0 border-r-[#005857] group hover:bg-[#005857] hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                        <img src="../assets/logo/peserta.svg" alt="peserta" width="25px"
+                            class="mr-4 transition-all duration-300 group-hover:invert">
+                        <h2 class="font-semibold">Peserta</h2>
+                    </a>
+
+                    <!-- Unggah -->
+                    <a href="#"
+                        class="animate__animated  flex items-center px-3 py-2 mt-2 transition-all duration-300 group hover:bg-[#005857] hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                        <img src="../assets/logo/upload.svg" alt="upload" width="25px"
+                            class="mr-4 transition-all duration-300 group-hover:invert">
+                        <h2 class="font-semibold">Unggah</h2>
+                    </a>
+                </div>
+                <!-- Lomba End -->
+
+                <!-- Logout -->
+                <a href="#"
+                    class="flex justify-self-end mb-5 px-3 py-2 transition-all duration-300 group hover:bg-[#005857] hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                    <img src="../assets/logo/logout.svg" width="25px" alt="logout"
+                        class="mr-4 transition-all duration-300 group-hover:invert">
+                    <h1 class="font-semibold inline-block">Log Out</h1>
+                </a>
+            </div>
+            <!-- [Left Side] End -->
+
+            <!-- [Right Side] -->
+            <div class="flex flex-col mx-3 my-3 rounded-xl bg-[#005857]">
+                <!-- Profile -->
+                <div class="animate__animated animate__backInRight flex items-center justify-end mt-4 mr-9">
+                    <h1 class="mr-4 font-semibold text-white">Welcome, Pou One!</h1>
+                    <a href="#"><img src="assets/img/profile.png" alt="profile" width="50px"></a>
+                </div>
+                <!-- Profile End -->
+
+                <!-- Greeting -->
+                <div class="text-5xl mt-3 ml-8 font-bold leading-[3.6rem]">
+                    <h1 class="text-white animate__animated animate__backInRight"><span
+                            class="text-[#5FCC9C]">BERKAS</span> PESERTA | DINACOM 2023</h1>
+                </div>
+
+                <!-- Border Line -->
+                <div class="w-[93%] mx-auto mt-9 mb-4 border border-slate-400"></div>
+
+                <!-- Navigation -->
+                <div class="flex items-center mx-8 mb-4">
+                    <a href="beranda.html"><img src="../assets/logo/home.svg" width="25px" alt=""
+                            class="invert hover:text-green-500"></a>
+                    <img src="../assets/logo/arrow_right.svg" width="25px" alt="" class="invert">
+                    <a href="peserta.html" class="text-white font-semibold hover:text-green-500">Peserta</a>
+                </div>
+                <!-- Navigation -->
+
+                <!-- Content -->
+                <div class="animate__animated animate__zoomIn bg-slate-200 mx-8 p-8 mb-5 h-full rounded-xl">
+                    <!-- Form Berkas -->
+                    <form action="" class="">
+                        <h1 class="w-fit px-4 py-3 rounded-t-lg bg-slate-300 text-black text-2xl font-bold">Kelengkapan
+                            Berkas</h1>
+                        <div
+                            class="form-grid grid grid-cols-2 grid-rows-5 gap-5 bg-slate-300 pt-2 px-4 pb-4 rounded-r-lg rounded-bl-lg">
+                            <!-- Nama Tim -->
+                            <div class="flex items-center mb-5 col-span-2">
+                                <img src="../assets/logo/team.svg" width="30px" alt="" class="mr-3">
+                                <div class="flex flex-col w-full group">
+                                    <label for="ntim" class="w-fit">
+                                        <span
+                                            class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5 group group-focus:text-green-400">Nama
+                                            Tim</span>
+                                    </label>
+                                    <input type="text" name="" id="ntim" placeholder="Nama Tim"
+                                        class="block bg-slate-100 w-full mt-1 px-3 py-2 border-0 rounded-md transition-all duration-[0.8s] placeholder:text-slate-400 placeholder:transition-all placeholder:duration-1000 focus:w-full focus:outline-0 focus:border focus:border-green-500 focus:shadow-lg focus:placeholder:-translate-x-32">
+                                </div>
+                            </div>
+                            <!-- Nama Tim End -->
+
+                            <!-- Ketua Tim -->
+                            <div class="flex items-center mb-5">
+                                <img src="../assets/logo/leader.svg" width="30px" alt="" class="mr-3">
+                                <div class="flex flex-col w-full">
+                                    <label for="ktim" class="w-fit">
+                                        <span
+                                            class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Nama
+                                            Ketua Tim</span>
+                                    </label>
+                                    <input type="text" name="" id="ktim" placeholder="Nama Ketua Tim"
+                                        class="block bg-slate-100 w-full mt-1 px-3 py-2 border-0 rounded transition-all duration-[0.8s] placeholder:text-slate-400 placeholder:transition-all placeholder:duration-1000 focus:w-full focus:outline-0 focus:border focus:border-green-500  focus:shadow-lg focus:placeholder:-translate-x-36 ">
+                                </div>
+                            </div>
+                            <!-- Ketua Tim End-->
+
+                            <!-- KI Ketua -->
+                            <div class="flex items-center mb-5">
+                                <img src="../assets/logo/identity_member.svg" width="30px" alt="" class="mr-3">
+                                <div class="flex flex-col w-full">
+                                    <label for="kiketua" class="w-fit mb-1">
+                                        <span
+                                            class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Kartu
+                                            Identitas Ketua</span>
+                                    </label>
+                                    <input id="kiketua" type="file"
+                                        class="block w-full text-md font-medium text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50">
+                                </div>
+                            </div>
+                            <!-- KI Ketua End-->
+
+                            <!-- Nama Anggota 1 -->
+                            <div class="flex items-center mb-5">
+                                <img src="../assets/logo/member.svg" width="30px" alt="" class="mr-3">
+                                <div class="flex flex-col w-full">
+                                    <label for=atim1" class="w-fit">
+                                        <span
+                                            class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Nama
+                                            Anggota 1</span>
+                                    </label>
+                                    <input type="text" name="" id=atim1" placeholder="Nama Anggota 1"
+                                        class="block bg-slate-100 w-full mt-1 px-3 py-2 border-0 rounded transition-all duration-[0.8s] placeholder:text-slate-400 placeholder:transition-all placeholder:duration-1000 focus:w-full focus:outline-0 focus:border focus:border-green-500 focus:shadow-lg focus:placeholder:-translate-x-36 ">
+                                </div>
+                            </div>
+                            <!-- Nama Anggota 1 End-->
+
+                            <!-- KI Anggota 1 -->
+                            <div class="flex items-center mb-5">
+                                <img src="../assets/logo/identity_member.svg" width="30px" alt="" class="mr-3">
+                                <div class="flex flex-col w-full">
+                                    <label for="kianggota1" class="w-fit mb-1">
+                                        <span
+                                            class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Kartu
+                                            Identitas Anggota 1</span>
+                                    </label>
+                                    <input id="kianggota1" type="file"
+                                        class="block w-full text-md font-medium text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50">
+                                </div>
+                            </div>
+                            <!-- KI Anggota 1 End-->
+
+                            <!-- Nama Anggota 2 -->
+                            <div class="flex items-center mb-5">
+                                <img src="../assets/logo/member.svg" width="30px" alt="" class="mr-3">
+                                <div class="flex flex-col w-full">
+                                    <label for="atim2" class="w-fit">
+                                        <span
+                                            class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Nama
+                                            Anggota 2</span>
+                                    </label>
+                                    <input type="text" name="" id="atim2" placeholder="Nama Anggota 2"
+                                        class="block bg-slate-100 w-full mt-1 px-3 py-2 border-0 rounded transition-all duration-[0.8s] placeholder:text-slate-400 placeholder:transition-all placeholder:duration-1000 focus:w-full focus:outline-0 focus:border focus:border-green-500 focus:shadow-lg focus:placeholder:-translate-x-36 ">
+                                </div>
+                            </div>
+                            <!-- Nama Anggota 2 End-->
+
+                            <!-- KI Anggota 2 -->
+                            <div class="flex items-center mb-5">
+                                <img src="../assets/logo/identity_member.svg" width="30px" alt="" class="mr-3">
+                                <div class="flex flex-col w-full">
+                                    <label for="kianggota2" class="w-fit mb-1">
+                                        <span
+                                            class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Kartu
+                                            Identitas Anggota 2</span>
+                                    </label>
+                                    <input id="kianggota2" type="file"
+                                        class="block w-full text-md font-medium text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50">
+                                </div>
+                            </div>
+                            <!-- KI Anggota 2 End-->
+
+                            <!-- Kategori -->
+                            <div class="flex items-center">
+                                <img src="../assets/logo/category.svg" width="30px" alt="" class="mr-3">
+                                <div class="flex flex-col w-full">
+                                    <h1
+                                        class="mb-1 text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">
+                                        Kategori Bidang</h1>
+                                    <!-- Radio -->
+                                    <div class="divide-y-2 divide-slate-500 rounded-xl">
+                                        <!-- Aplikasi -->
+                                        <div
+                                            class="flex items-center bg-slate-100 pl-4 transition-all duration-300 cursor-pointer rounded-t-xl hover:bg-[#1f2937] group">
+                                            <input id="aplikasi" type="radio" value="" name="bordered-radio"
+                                                class="w-4 h-4 text-[#005857] bg-slate-300 border-gray-300 focus:ring-[#005857] transition-all duration-300 border">
+                                            <label for="aplikasi"
+                                                class="py-4 ml-2 w-full text-md font-semibold text-gray-900 cursor-pointer group-hover:text-white">Aplikasi</label>
+                                        </div>
+                                        <!-- Aplikasi End -->
+
+                                        <!-- UI/UX -->
+                                        <div
+                                            class="flex items-center bg-slate-100 pl-4 transition-all duration-300 cursor-pointer rounded-b-xl hover:bg-[#1f2937] group">
+                                            <input id="uiux" type="radio" value="" name="bordered-radio"
+                                                class="w-4 h-4 text-[#005857] bg-slate-300 border-gray-300 focus:ring-[#005857] transition-all duration-300 border">
+                                            <label for="uiux"
+                                                class="py-4 ml-2 w-full text-md font-semibold text-gray-900 cursor-pointer group-hover:text-white">UI/UX</label>
+                                        </div>
+                                        <!-- UI/UX End -->
+                                    </div>
+                                    <!-- Radio End -->
+                                </div>
+                            </div>
+                            <!-- Kategori End -->
+
+                            <!-- Submit Button -->
+                            <button type="submit"
+                                class="bg-[#005857] w-fit h-fit place-self-center text-white text-xl font-bold rounded-lg px-16 py-4 transition-all duration-300 hover:bg-opacity-90 hover:-translate-y-2 active:scale-90">Submit</button>
+                            <!-- Submit Button End -->
+                        </div>
+                    </form>
+                    <!-- Form Berkas End -->
+                </div>
+                <!-- Content End-->
+            </div>
+            <!-- [Right Side] End -->
+        </div>
+        <!-- Main-Lg End -->
+
+        <!-- Main-Sm-Md -->
+        <div class="lg:hidden bg-[#005857] m-4 rounded-xl py-2">
+            <!-- Profile -->
+            <div class="animate__animated animate__backInRight flex items-center justify-end mt-4 mr-3">
+                <h1 class="mr-4 font-semibold text-white">Welcome, Pou One!</h1>
+                <a href="#"><img src="assets/img/profile.png" alt="profile" width="50px"></a>
+            </div>
+            <!-- Profile End -->
+
+            <!-- Hero -->
+            <div
+                class="lg:hidden animate__animated animate__bounceInDown text-[2.5rem] md:text-5xl mt-12 font-bold leading-[3.3rem] md:leading-[3.6rem] text-center">
+                <h1 class="text-white"><span class="text-[#5FCC9C]">BERKAS</span> PESERTA</h1>
+                <h1 class="text-white">DINACOM 2023</h1>
+            </div>
+            <!-- Hero End -->
+
+            <!-- Border Line -->
+            <div class="lg:hidden w-[93%] mx-auto my-9 border border-slate-400"></div>
+
+            <!-- Content -->
+            <!-- <div class="lg:hidden bg-slate-200 w-[96%] px-4 py-3 mx-auto rounded-xl"> -->
+            <!-- Form Berkas -->
+            <form action="" class="lg:hidden animate__animated animate__zoomIn px-2">
+                <h1 class="w-fit px-4 py-3 rounded-t-lg bg-slate-300 text-black text-xl font-bold">Kelengkapan Berkas
+                </h1>
+                <div class="flex flex-col bg-slate-300 pt-2 px-4 py-3 rounded-r-lg rounded-bl-lg">
+                    <!-- Nama Tim -->
+                    <div class="flex items-center mb-5 col-span-2">
+                        <img src="../assets/logo/team.svg" width="30px" alt="" class="mr-3">
+                        <div class="flex flex-col w-full group">
+                            <label for="ntim" class="w-fit">
+                                <span
+                                    class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5 group group-focus:text-green-400">Nama
+                                    Tim</span>
+                            </label>
+                            <input type="text" name="" id="ntim" placeholder="Nama Tim"
+                                class="block bg-slate-100 border-0 w-full mt-1 px-3 py-2 rounded-md transition-all duration-[0.8s] placeholder:text-slate-400 placeholder:transition-all placeholder:duration-1000 focus:w-full focus:outline-0 focus:border focus:border-green-500 focus:shadow-lg focus:placeholder:-translate-x-32">
+                        </div>
+                    </div>
+                    <!-- Nama Tim End -->
+
+                    <!-- Ketua Tim -->
+                    <div class="flex items-center mb-5">
+                        <img src="../assets/logo/leader.svg" width="30px" alt="" class="mr-3">
+                        <div class="flex flex-col w-full">
+                            <label for="ktim" class="w-fit">
+                                <span
+                                    class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Nama
+                                    Ketua Tim</span>
+                            </label>
+                            <input type="text" name="" id="ktim" placeholder="Nama Ketua Tim"
+                                class="block bg-slate-100 border-0 w-full mt-1 px-3 py-2 rounded transition-all duration-[0.8s] placeholder:text-slate-400 placeholder:transition-all placeholder:duration-1000 focus:w-full focus:outline-0 focus:border focus:border-green-500  focus:shadow-lg focus:placeholder:-translate-x-36 ">
+                        </div>
+                    </div>
+                    <!-- Ketua Tim End-->
+
+                    <!-- Nama Anggota 1 -->
+                    <div class="flex items-center mb-5">
+                        <img src="../assets/logo/member.svg" width="30px" alt="" class="mr-3">
+                        <div class="flex flex-col w-full">
+                            <label for=atim1" class="w-fit">
+                                <span
+                                    class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Nama
+                                    Anggota 1</span>
+                            </label>
+                            <input type="text" name="" id=atim1" placeholder="Nama Anggota 1"
+                                class="block bg-slate-100 border-0 w-full mt-1 px-3 py-2 rounded transition-all duration-[0.8s] placeholder:text-slate-400 placeholder:transition-all placeholder:duration-1000 focus:w-full focus:outline-0 focus:border focus:border-green-500 focus:shadow-lg focus:placeholder:-translate-x-36 ">
+                        </div>
+                    </div>
+                    <!-- Nama Anggota 1 End-->
+
+                    <!-- Nama Anggota 2 -->
+                    <div class="flex items-center mb-5">
+                        <img src="../assets/logo/member.svg" width="30px" alt="" class="mr-3">
+                        <div class="flex flex-col w-full">
+                            <label for="atim2" class="w-fit">
+                                <span
+                                    class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Nama
+                                    Anggota 2</span>
+                            </label>
+                            <input type="text" name="" id="atim2" placeholder="Nama Anggota 2"
+                                class="block bg-slate-100 border-0 w-full mt-1 px-3 py-2 rounded transition-all duration-[0.8s] placeholder:text-slate-400 placeholder:transition-all placeholder:duration-1000 focus:w-full focus:outline-0 focus:border focus:border-green-500 focus:shadow-lg focus:placeholder:-translate-x-36 ">
+                        </div>
+                    </div>
+                    <!-- Nama Anggota 2 End-->
+
+                    <!-- KI Ketua -->
+                    <div class="flex items-center mb-5">
+                        <img src="../assets/logo/identity_member.svg" width="30px" alt="" class="mr-3">
+                        <div class="flex flex-col w-full">
+                            <label for="kiketua" class="w-fit mb-1">
+                                <span
+                                    class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Kartu
+                                    Identitas Ketua</span>
+                            </label>
+                            <input id="kiketua" type="file"
+                                class="block w-full text-md font-medium text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50">
+                        </div>
+                    </div>
+                    <!-- KI Ketua End-->
+
+                    <!-- KI Anggota 1 -->
+                    <div class="flex items-center mb-5">
+                        <img src="../assets/logo/identity_member.svg" width="30px" alt="" class="mr-3">
+                        <div class="flex flex-col w-full">
+                            <label for="kianggota1" class="w-fit mb-1">
+                                <span
+                                    class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Kartu
+                                    Identitas Anggota 1</span>
+                            </label>
+                            <input id="kianggota1" type="file"
+                                class="block w-full text-md font-medium text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50">
+                        </div>
+                    </div>
+                    <!-- KI Anggota 1 End-->
+
+                    <!-- KI Anggota 2 -->
+                    <div class="flex items-center mb-5">
+                        <img src="../assets/logo/identity_member.svg" width="30px" alt="" class="mr-3">
+                        <div class="flex flex-col w-full">
+                            <label for="kianggota2" class="w-fit mb-1">
+                                <span
+                                    class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Kartu
+                                    Identitas Anggota 2</span>
+                            </label>
+                            <input id="kianggota2" type="file"
+                                class="block w-full text-md font-medium text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50">
+                        </div>
+                    </div>
+                    <!-- KI Anggota 2 End-->
+
+                    <!-- Kategori -->
+                    <div class="flex items-center">
+                        <img src="../assets/logo/category.svg" width="30px" alt="" class="mr-3">
+                        <div class="flex flex-col w-full">
+                            <h1
+                                class="mb-1 text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">
+                                Kategori Bidang</h1>
+                            <!-- Radio -->
+                            <div class="divide-y-2 divide-slate-500 rounded-xl">
+                                <!-- Aplikasi -->
+                                <div
+                                    class="flex items-center bg-slate-100 pl-4 transition-all duration-300 cursor-pointer rounded-t-xl hover:bg-[#1f2937] group">
+                                    <input id="aplikasi" type="radio" value="" name="bordered-radio"
+                                        class="w-4 h-4 text-[#005857] bg-slate-300 border-gray-300 focus:ring-[#005857] transition-all duration-300 border">
+                                    <label for="aplikasi"
+                                        class="py-4 ml-2 w-full text-md font-semibold text-gray-900 cursor-pointer group-hover:text-white">Aplikasi</label>
+                                </div>
+                                <!-- Aplikasi End -->
+
+                                <!-- UI/UX -->
+                                <div
+                                    class="flex items-center bg-slate-100 pl-4 transition-all duration-300 cursor-pointer rounded-b-xl hover:bg-[#1f2937] group">
+                                    <input id="uiux" type="radio" value="" name="bordered-radio"
+                                        class="w-4 h-4 text-[#005857] bg-slate-300 border-gray-300 focus:ring-[#005857] transition-all duration-300 border">
+                                    <label for="uiux"
+                                        class="py-4 ml-2 w-full text-md font-semibold text-gray-900 cursor-pointer group-hover:text-white">UI/UX</label>
+                                </div>
+                                <!-- UI/UX End -->
+                            </div>
+                            <!-- Radio End -->
+                        </div>
+                    </div>
+                    <!-- Kategori End -->
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="bg-[#005857] w-fit h-fit mt-8  place-self-center text-white text-xl font-bold rounded-lg px-16 py-4 transition-all duration-300 hover:bg-opacity-90 hover:-translate-y-2 active:scale-90">Submit</button>
+                    <!-- Submit Button End -->
+                </div>
+            </form>
+            <!-- Form Berkas End -->
+            <!-- </div> -->
+            <!-- Content End -->
+        </div>
+    </div>
+    <!-- Super Container End -->
+
+    <!-- Flowbite Script -->
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+</body>
+
+</html>

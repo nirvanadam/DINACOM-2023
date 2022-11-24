@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../img/logo2.png" type="image/x-icon">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/scroll.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        bai: ['Bai Jamjuree']
+                    },
+                    color: {
+                        'baseColor': '#5FCC9C',
+                    },
+                    gridTemplateColumns: {
+                        'main-grid': '1fr 2fr'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        /* Syntax CSS Here */
+       .main-lg{
+        grid-template-columns: 0.5fr 2fr;
+       }
+    </style>
+</head>
+
+<body class="font-bai bg-slate-200">
+
+    <!-- Super Container -->
+    <div class=" mx-auto lg:h-[100vh]">
+        <!-- Navbar -->
+        <div class="lg:hidden bg-black flex items-center justify-between py-4 px-4">
+            <!-- Logo -->
+            <div class="flex flex-row items-center">
+                <a href="#" class="ml-3"><img src="assets/img/logo2.png" width="50px" alt="logo"></a>
+                <h1 class="text-white text-xl font-bold ml-2">DINACOM</h1>
+            </div>
+
+            <!-- Nav Menu -->
+            <div class="bg-white w-13 h-13 mr-3 rounded-lg overflow-hidden lg:hidden">
+                <button id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider"
+                    class="bg-slate-200 w-full h-full text-sm px-4 py-2.5 text-center inline-flex items-center"
+                    type="button">
+                    <img src="../../assets/logo/humberger.svg" width="" alt="">
+                </button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownDivider"
+                    class="hidden z-10 w-44 bg-slate-200 rounded divide-y divide-gray-400 shadow dark:bg-gray-700 dark:divide-gray-600">
+                    <div class="py-1">
+                        <a href="beranda.html"
+                            class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Beranda</a>
+                    </div>
+                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
+                        <li>
+                            <a href="peserta.html"
+                                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Peserta</a>
+                        </li>
+                        <li>
+                            <a href="unggah.html"
+                                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Unggah</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Main-Lg -->
+        <div class="main-lg hidden lg:grid h-full">
+            <!-- [Left Side] -->
+            <div class=""></div>
+            <div class="animate__animated animate__slideInLeft fixed flex flex-col w-[20%] h-[100vh] px-5 bg-slate-200">
+                <!-- Logo -->
+                <div class="flex flex-row items-center mt-5 mb-14">
+                    <img src="assets/img/logo.png" alt="logo" width="50px" class=" ">
+                    <h1 class="text-xl font-bold ml-1">DINACOM</h1>
+                </div>
+                <!-- Logo End -->
+
+                <!-- Beranda -->
+                <div class="mb-7">
+                    <h1 class="mb-2 text-[#005857] font-semibold">Beranda</h1>
+                    <a href="beranda.html"
+                        class="animate__animated  flex items-center w-full px-3 py-2 border-4 border-l-0 border-y-0 border-[#005857] transition-all duration-300 group hover:bg-[#005857] hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                        <img src="../assets/logo/home.svg" alt="home" width="25px"
+                            class="mr-4 transition-all duration-300 group-hover:invert">
+                        <h2 class="font-semibold">Beranda</h2>
+                    </a>
+                </div>
+                <!-- Beranda End -->
+
+                <div class="w-[93%] mx-auto border border-slate-400"></div>
+
+                <!-- Lomba -->
+                <div class="mt-7 h-full">
+                    <h1 class="mb-2 font-semibold text-[#005857]">Lomba</h1>
+
+                    <!-- Peserta -->
+                    <a href="peserta.html"
+                        class="animate__animated  flex items-center px-3 py-2 transition-all duration-300 group hover:bg-[#005857] hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                        <img src="../assets/logo/peserta.svg" alt="peserta" width="25px"
+                            class="mr-4 transition-all duration-300 group-hover:invert">
+                        <h2 class="font-semibold">Peserta</h2>
+                    </a>
+
+                    <!-- Unggah -->
+                    <a href="#"
+                        class="animate__animated  flex items-center px-3 py-2 mt-2 transition-all duration-300 group hover:bg-[#005857] hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                        <img src="../assets/logo/upload.svg" alt="upload" width="25px"
+                            class="mr-4 transition-all duration-300 group-hover:invert">
+                        <h2 class="font-semibold">Unggah</h2>
+                    </a>
+                </div>
+                <!-- Lomba End -->
+
+                <!-- Logout -->
+                <a href="#"
+                    class="flex justify-self-end mb-5 px-3 py-2 transition-all duration-300 group hover:bg-[#005857] hover:rounded-xl hover:text-white hover:translate-x-4 active:scale-90">
+                    <img src="../assets/logo/logout.svg" width="25px" alt="logout"
+                        class="mr-4 transition-all duration-300 group-hover:invert">
+                    <h1 class="font-semibold inline-block">Log Out</h1>
+                </a>
+
+            </div>
+            <!-- [Left Side] End -->
+
+            <!-- [Right Side] -->
+            <div class="flex flex-col mx-3 my-3 rounded-xl bg-[#005857]">
+                <!-- Profile -->
+                <div class="animate__animated animate__backInRight flex items-center justify-end mt-4 mr-9">
+                    <h1 class="mr-4 font-semibold text-white">Welcome, Pou One!</h1>
+                    <a href="#"><img src="assets/img/profile.png" alt="profile" width="50px"></a>
+                </div>
+                <!-- Profile End -->
+
+                <!-- Greeting -->
+                <div class="text-5xl mt-3 ml-8 font-bold leading-[3.6rem]">
+                    <!-- <h1><span class="text-green-500 animate-pulse">WELCOME</span> TO</h1>
+                    <h1>DINACOM'S</h1>
+                    <h1>DASHBOARD!</h1> -->
+                    <h1 class="text-white animate__animated animate__backInRight"><span
+                            class="text-[#5FCC9C]">BERANDA</span> | DINACOM 2023</h1>
+                </div>
+
+                <!-- Border Line -->
+                <div class="w-[93%] mx-auto my-9 border border-slate-400"></div>
+
+                <!-- Card Container -->
+                <div class="animate__animated animate__zoomIn mx-8 mb-5 h-full rounded-xl"
+                    style="background-image: url('assets/img/timeline_desktop.png'); background-size: 100%; background-position: center; background-repeat: no-repeat;">
+                </div>
+                <!-- Card Container End-->
+            </div>
+            <!-- [Right Side] End -->
+        </div>
+        <!-- Main-Lg End -->
+
+        <!-- Hero -->
+        <div
+            class="lg:hidden text-[2.5rem] md:text-5xl mt-12 font-bold leading-[3.3rem] md:leading-[3.6rem] text-center">
+            <!-- <h1><span class="text-green-500">WELCOME</span> TO</h1>
+            <h1>DINACOM'S DASHBOARD!</h1> -->
+            <h1 class="animate__animated animate__backInDown text-[#005857]">BERANDA</h1>
+            <h1 class="animate__animated animate__backInDown">DINACOM 2023</h1>
+        </div>
+        <!-- Hero End -->
+
+        <!-- Border Line -->
+        <div class="lg:hidden w-[93%] mx-auto my-9 border border-slate-400"></div>
+
+        <!-- Profile -->
+        <div class="lg:hidden animate__animated animate__backInRight flex items-center justify-end my-9 mr-9">
+            <h1 class="mr-4 font-semibold text-black">Welcome, Pou One!</h1>
+            <a href="#"><img src="assets/img/profile.png" alt="profile" width="50px"></a>
+        </div>
+        <!-- Profile End -->
+
+        <!-- Content -->
+        <div class="animate__animated animate__zoomIn md:hidden lg:hidden rounded-xl mx-auto mb-5 max-w-[400px] h-[950px] "
+            style="background-image: url('assets/img/timeline_mobile.png'); background-size: 100%; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <!-- Content End -->
+
+        <!-- Content md -->
+        <div class="animate__animated animate__zoomIn hidden md:block lg:hidden rounded-xl mx-3 mb-5 max-w-[1000px] min-w h-[390px]"
+            style="background-image: url('assets/img/timeline_desktop.png'); background-size: 100%; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <!-- Content md End -->
+    </div>
+    <!-- Super Container End -->
+
+    <!-- Flowbite Script -->
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+</body>
+
+</html>
